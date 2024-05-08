@@ -6,6 +6,10 @@ This project is designed to provide users (myself, actually) a simple and initui
 
 ## Preview
 
+Live on Vercel: https://resume-editor-lyart.vercel.app
+
+![](./src/assets/screenshot.png)
+
 ## Features
 
 - User-friendly Interface: The application offers a clean and intuitive user interface, making it easy for users to navigate and create/edit their resumes efficiently.
