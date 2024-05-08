@@ -1,0 +1,15 @@
+@import url(./tab.css);
+@import url(./content-page.css);
+@import url(./config-page.css);
+@import url(./item-list.css);
+@import url(./item-editor.css);
+
+.form {
+  width: clamp(22rem, 100%, 45ch);
+
+  .btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}

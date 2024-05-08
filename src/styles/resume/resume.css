@@ -1,0 +1,44 @@
+@import url(header.css);
+@import url(contact.css);
+@import url(section.css);
+
+.resume {
+  width: clamp(45ch, 100%, 75ch);
+  box-shadow: var(--bshadow-1);
+
+  font-family: var(--font-selected);
+  color: var(--clr-text);
+  background: var(--clr-white, white);
+
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas:
+    'header header'
+    'contact profile'
+    'education experience'
+    'skills experience';
+}
+
+#header {
+  grid-area: header;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#profile {
+  grid-area: profile;
+}
+
+#education {
+  grid-area: education;
+}
+
+#skills {
+  grid-area: skills;
+}
+
+#experience {
+  grid-area: experience;
+}

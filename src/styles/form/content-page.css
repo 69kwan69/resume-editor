@@ -1,0 +1,45 @@
+.content-page {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .section {
+    box-shadow: var(--bshadow-1);
+
+    &.open {
+      box-shadow: var(--bshadow-2);
+
+      i.fa-chevron-right {
+        transition: 0.1s;
+        rotate: 90deg;
+      }
+    }
+
+    button {
+      transition: 0.1s;
+      background: var(--clr-white, white);
+
+      display: flex;
+      align-items: center;
+      gap: var(--spacing);
+
+      width: 100%;
+      padding-inline: var(--spacing);
+      padding-block: calc(var(--spacing) / 2);
+
+      i {
+        font-size: 1.3rem;
+      }
+
+      h2 {
+        flex: 1;
+        text-align: left;
+        letter-spacing: 0.1em;
+      }
+
+      &:hover {
+        background: var(--clr-gray, #f2f2f2);
+      }
+    }
+  }
+}

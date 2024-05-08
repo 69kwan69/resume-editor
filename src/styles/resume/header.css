@@ -1,0 +1,46 @@
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  position: relative;
+  padding-inline: var(--spacing);
+  padding-block: calc(var(--spacing) * 2);
+
+  isolation: isolate;
+
+  .background {
+    background: var(--clr-accent);
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin-block: 1em;
+  }
+
+  .fullname {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.3rem;
+    letter-spacing: 0.2em;
+  }
+
+  .specialized {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
+  .photo {
+    width: 13rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: calc(0em - var(--spacing)) -3em;
+  }
+}

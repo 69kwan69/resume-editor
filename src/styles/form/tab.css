@@ -1,0 +1,27 @@
+.form .tab {
+  display: flex;
+  margin-bottom: 1rem;
+
+  box-shadow: var(--bshadow-1);
+
+  button {
+    flex: 1;
+
+    background: var(--clr-white, white);
+    border: none;
+    padding: 0.7em 1em;
+
+    font-size: 1.1rem;
+
+    transition: 0.1s;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--clr-gray, #f2f2f2);
+    }
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}

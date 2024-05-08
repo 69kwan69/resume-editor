@@ -1,0 +1,117 @@
+.config-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+
+  background: var(--clr-white, white);
+  box-shadow: var(--bshadow-1);
+  padding: var(--spacing);
+
+  h2 {
+    letter-spacing: 0.1em;
+  }
+
+  .color-options {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    gap: 1rem;
+
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-weight: normal;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        background: white;
+        padding: 0.5em;
+        border: 1px solid;
+
+        position: relative;
+        cursor: pointer;
+
+        input {
+          position: absolute;
+          inset: 0;
+          opacity: 0;
+        }
+
+        .input {
+          width: 1.3rem;
+          aspect-ratio: 1;
+          box-shadow: var(--bshadow-1);
+          border-radius: 50%;
+        }
+
+        .value {
+          font-family: monospace;
+          font-size: 0.8rem;
+          font-weight: 400;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .font-options {
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+
+    button {
+      display: grid;
+      place-items: center;
+
+      background: white;
+      padding: 0.7em 1em;
+      border: 1px solid;
+
+      cursor: pointer;
+
+      &:hover {
+        background: hsla(0, 0%, 0%, 0.05);
+      }
+
+      &.selected {
+        outline: 2px solid;
+      }
+
+      &.sans {
+        font-family: var(--font-sans);
+      }
+
+      &.serif {
+        font-family: var(--font-serif);
+      }
+
+      .font-test {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .reset.btn {
+    width: 100%;
+    padding: 0.7em 1em;
+    border: 2px solid var(--clr-red, red);
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--clr-red, red);
+
+    transition: 0.1s;
+
+    &:hover {
+      color: white;
+      background: var(--clr-red, red);
+    }
+  }
+}
